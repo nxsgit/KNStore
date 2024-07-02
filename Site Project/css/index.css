@@ -1,0 +1,270 @@
+/* Fontes importadas */
+
+/* Fontes para index.html */
+
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+/*
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+*/
+
+/* Fontes para texto de footer "Devs e direitos autorais" */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+*/
+
+/*----------------------------------------------------*/
+
+/* Fontes para index.html "produtos" */
+
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+
+/*
+    font-family: "Slackey", sans-serif;
+    font-weight: 400;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
+/*
+    font-family: "Reggae One", system-ui;
+    font-weight: 400;
+*/
+
+/*----------------------------------------------------*/
+                /* BARRA DE NAVEGAÇÃO CONTENT */
+/*----------------------------------------------------*/
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Estilização para o "menu de navegação" */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: black;
+}
+
+/* Estização para o "logo" da página */
+
+.logo {
+    max-width: 200px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Estilização para os "sub-menus" na barra de navegação */
+
+.bp li, a {
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.3s ease 0s;
+}
+
+/* Espaçamento dos "sub-menus" */
+
+.bp li {
+    display: inline-block;
+    padding: 0px 50px;
+}
+
+/* Efeitos para os "sub-menus" na barra de navegação */
+
+.bp li a:hover {
+    color: darkred;
+}
+
+/* Estilização para botão de "Contato" */
+
+.bc1 {
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 5px 30px;
+    color: white;
+    background-color: darkred;
+    box-shadow: 0px 0px 2px 2px white;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/* Efeitos para o botão de "Contato" */
+
+.bc1:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 2px 2px darkred;
+}
+
+/* Estilização para texto de footer "Devs e direitos autorais" */
+
+footer {
+    padding: 200px 0px 0px 0px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+    text-shadow: 0px 0px 1px red;
+}
+
+/*----------------------------------------------------*/
+                /* PRODUTOS CONTENT */
+/*----------------------------------------------------*/
+
+/* Estilização para texto h1 de "Home Page" */
+
+.index-h1 {
+    margin: 50px;
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-size: 55px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px red;
+}
+
+/*----------------------------------------------------*/
+
+.index-sec1 {
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+.index-div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-h2 {
+    margin-top: 5px;
+    position: relative;
+    font-family: "Slackey", sans-serif;
+    font-weight: 400;
+    font-size: 4vw;
+    color: white;
+    -webkit-text-stroke: 0.1vw black;
+    text-transform: uppercase;
+}
+
+.index-h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    color:darkred;
+    -webkit-text-stroke: 0.1vw black;
+    border-right: 2px solid black;
+    overflow: hidden;
+    animation: animate1 10s linear infinite;
+}
+
+@keyframes animate1 {
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+/*----------------------------------------------------*/
+
+.index-sec2 {
+    margin-top: 300px;
+    margin-bottom: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Reggae One", system-ui;
+    font-weight: 400;
+    font-size: 50px;
+    color: black;
+    text-shadow: 0px 0px 2px darkred;
+    text-decoration: none;
+}
+
+.index-div2 {
+    animation: animate2 1s linear infinite;
+}
+
+@keyframes animate2 {
+    2%,64%{
+        transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+        transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+        transform: translate(0,0) skew(5deg); 
+    }
+}
+
+.index-div2:before, .index-div2:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+}
+
+.index-div2:before {
+    animation: animatetop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes animatetop {
+    2%,64%{
+        transform: translate(2px,-2px);
+    }
+    4%,60%{
+        transform: translate(-2px,2px);
+    }
+    62%{
+        transform: translate(13px,-1px) skew(-13deg); 
+    }
+}
+
+.index-div2:after {
+    animation: animatebot 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes animatebot {
+    2%,64%{
+        transform: translate(-2px,0);
+    }
+    4%,60%{
+        transform: translate(-2px,0);
+    }
+    62%{
+        transform: translate(-22px,5px) skew(21deg); 
+    }
+}

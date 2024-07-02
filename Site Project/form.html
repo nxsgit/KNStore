@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>KN Store Contate-nos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="shortcut icon" href="img/logop2.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.svg" alt="logo">
+        <nav>
+            <ul class="bp">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#sobre1">Sobre</a></li>
+            </ul>
+        </nav>
+        <a class="bc" href="form.html"><button class="bc1">Contato</button></a>
+    </header>
+
+    <h1 class="form-h1">Contate-nos</h1>
+
+    <section class="form-sec1">
+        <form action="#" method="get">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" class="input1" required placeholder="Nome Completo" maxlength="50">
+        
+            <label for="id-email">E-mail:</label>
+            <input type="email" name="id-email" id="id-email" class="input1" required placeholder="exemplo@gmail.com">
+
+            <label for="data">Data:</label>
+            <input type="date" name="data" id="data" class="input1" required min="1970-01-01" max="2024-01-01">
+            
+            <label for="fone">Telefone:</label>
+            <input type="tel" name="fone" id="fone" class="input1" required placeholder="xx-xxxxx.xxxx" pattern="[1-9]{2}-[0-9]{5}.[0-9]{4}">
+
+            <label for="bio">Deixe seu comentário abaixo:</label>
+            <textarea name="bio" id="bio" cols="50" rows="4" class="textarea1" required placeholder="Escreva seu comentário aqui..."></textarea>
+
+            <button type="submit" class="cad1">Cadastrar</button>
+            <button type="reset" class="camp1">Limpar campos</button>
+        </form>
+    </section>
+
+    <footer id="sobre1" class="sobre1">Devs: Lukinhas & nxs<br>2024 ©All Rights Reserved</footer>
+</body>
+</html>

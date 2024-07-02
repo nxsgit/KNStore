@@ -1,0 +1,248 @@
+/* Fontes importadas */
+
+/* Fontes para barra de navegação */
+
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+/*
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+*/
+
+/* Fontes para texto de footer "Devs e direitos autorais" e form.html */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+*/
+
+/*----------------------------------------------------*/
+                /* BARRA DE NAVEGAÇÃO CONTENT */
+/*----------------------------------------------------*/
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Estilização para o "menu de navegação" */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: black;
+}
+
+/* Estização para o "logo" da página */
+
+.logo {
+    max-width: 200px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Estilização para os "sub-menus" na barra de navegação */
+
+.bp li, a {
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.3s ease 0s;
+}
+
+/* Espaçamento dos "sub-menus" */
+
+.bp li {
+    display: inline-block;
+    padding: 0px 50px;
+}
+
+/* Efeitos para os "sub-menus" na barra de navegação */
+
+.bp li a:hover {
+    color: darkred;
+}
+
+/* Estilização para botão de "Contato" */
+
+.bc1 {
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 5px 30px;
+    color: white;
+    background-color: darkred;
+    box-shadow: 0px 0px 2px 2px white;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/* Efeitos para o botão de "Contato" */
+
+.bc1:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 2px 2px darkred;
+}
+
+/* Estilização para texto de footer "Devs e direitos autorais" */
+
+footer {
+    padding: 200px 0px 0px 0px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+    text-shadow: 0px 0px 1px red;
+}
+
+/*----------------------------------------------------*/
+                /* FORM.HTML CONTENT */
+/*----------------------------------------------------*/
+
+/* Estilização para texto h1 de "Contate-nos" */
+
+.form-h1 {
+    margin: 50px;
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-size: 55px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px red;
+}
+
+/* Estilização para section da class "sec1" */
+
+.form-sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: -10vh;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilização para form "formulário" */
+
+form {
+    width: 300px;
+    padding: 50px;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+/* Espaçamento do topo entre input e label do "formulário" */
+
+form label {
+    margin-top: 50px;
+}
+
+/* Espaçamento entre label e input do "formulário" */
+
+form label, .input1 {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Estilização para input e textarea do "formulário" */
+
+.input1, .textarea1 {
+    width: calc(100% - 20px);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 1px 1px darkred;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Espaçamento entre os botões "Cadastrar" e "Limpar campos" */
+
+form button {
+    margin: 20px;
+}
+
+/* Estilização para botão de "Cadastrar" */
+
+.cad1 {
+    width: 85%;
+    margin-top: 100px;
+    text-align: center;
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 5px 30px;
+    color: white;
+    background-color: darkred;
+    box-shadow: 0px 0px 2px 2px black;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/* Efeitos para o botão de "Cadastrar" */
+
+.cad1:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 2px 2px darkred;
+}
+
+/* Estilização para botão de "Limpar campos" */
+
+.camp1 {
+    width: 85%;
+    text-align: center;
+    font-family: "Rochester", cursive;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 5px 30px;
+    color: white;
+    background-color: black;
+    box-shadow: 0px 0px 2px 2px darkred;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/* Efeitos para o botão de "Limpar campos" */
+
+.camp1:hover {
+    color: darkred;
+    background-color: white;
+    box-shadow: 0px 0px 2px 2px black;
+}
